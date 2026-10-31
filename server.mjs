@@ -2,7 +2,7 @@
 import { createServer } from "node:http";
 import { createHash } from "node:crypto";
 
-const VERSION = process.env.APP_VERSION ?? "v1";
+const VERSION = process.env.APP_VERSION ?? "v2-preview";
 const port = Number(process.env.PORT ?? 3000);
 
 const page = (req) => `<!doctype html><meta charset="utf-8"><title>vfy-test-gateway ${VERSION}</title>
